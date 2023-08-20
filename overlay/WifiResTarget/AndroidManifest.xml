@@ -8,7 +8,7 @@
 
     <overlay
         android:isStatic="true"
-        android:priority="2015"
+        android:priority="250"
         android:targetName="WifiCustomization"
         android:targetPackage="com.android.wifi.resources" />
 </manifest>
