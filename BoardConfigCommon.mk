@@ -58,9 +58,6 @@ BOARD_USES_ALSA_AUDIO := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
-
 # Camera
 TARGET_USES_OPLUS_CAMERA := true
 
@@ -126,8 +123,8 @@ TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/debugfs.config
 
 # Clang
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r487747c
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r487747c
+TARGET_KERNEL_CLANG_VERSION := neutron
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
 TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld LLVM=1 LLVM_IAS=1
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 KERNEL_LD := LD=ld.lld
